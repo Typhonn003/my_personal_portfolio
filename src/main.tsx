@@ -1,14 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { GlobalStyle } from "@/styles/Global";
-import { Home } from "@/pages/home";
-import { NavBar } from "@/components/Navbar";
+import ReactDOM from "react-dom";
+import { GlobalStyle } from "./styles/Global";
+import { Home } from "./pages/home";
+import { NavBar } from "./components/Navbar";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle>
       <NavBar />
       <Home />
-    </GlobalStyle>
-  </React.StrictMode>
+    </ GlobalStyle>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
