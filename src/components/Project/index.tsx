@@ -47,45 +47,45 @@ export const Project = (): JSX.Element => {
           <ProjectWrapper key={repository.id}>
             <ProjectTitle
               as="h2"
-              type="heading3"
+              type="heading2"
               css={{ marginBottom: "$3" }}
-              color="grey4"
+              color="brand12"
             >
               {repository.name}
             </ProjectTitle>
 
             <ProjectStack>
-              <Text type="body2" color="grey2">
-                Primary Language:
+              <Text type="body2" color="brand12">
+                Linguagem principal:
               </Text>
               {repository.language ? (
                 <ProjectStackTech>
-                  <Text color="grey2" type="body2">
+                  <Text color="brand12" type="body2">
                     {repository.language}
                   </Text>
                 </ProjectStackTech>
               ) : (
                 <ProjectStackTech>
-                  <Text color="grey2" type="body2">
-                    Primary language not identified
+                  <Text color="brand12" type="body2">
+                    Linguagem indisponível
                   </Text>
                 </ProjectStackTech>
               )}
             </ProjectStack>
 
-            <Text type="body1" color="grey2">
+            <Text type="body1" color="brand10">
               {repository.description?.substring(0, 129)}
             </Text>
             <ProjectLinks>
               <ProjectLink target="_blank" href={repository.html_url}>
-                <FaGithub /> Github Code
+                <FaGithub /> Repositório do Github
               </ProjectLink>
               {repository.homepage && (
                 <ProjectLink
                   target="_blank"
-                  href={`https://${repository.homepage}`}
+                  href={repository.homepage}
                 >
-                  <FaShare /> See demo
+                  <FaShare /> Ver demonstração
                 </ProjectLink>
               )}
             </ProjectLinks>

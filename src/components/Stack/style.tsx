@@ -19,7 +19,7 @@ export const StackCard = styled("div", {
     opacity: 0,
     position: "absolute",
     transform: "translateY(-15%)",
-    background: "$whiteFixed",
+    background: "$violet12",
     boxShadow: "drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.12))",
     padding: "0.4rem 1rem",
     borderRadius: "$1",
@@ -27,7 +27,7 @@ export const StackCard = styled("div", {
     fontSize: "1rem",
     fontWeight: "500",
     whiteSpace: "nowrap",
-    color: "$blackFixed",
+    color: "$violet1",
 
     "&:before": {
       content: "",
@@ -38,7 +38,7 @@ export const StackCard = styled("div", {
       height: 0,
       borderLeft: "25px solid transparent",
       borderRight: "25px solid transparent",
-      borderTop: "25px solid $whiteFixed",
+      borderTop: "25px solid $violet12",
       transform: "translateX(-50%)",
       left: "50%",
     },

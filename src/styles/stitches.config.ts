@@ -1,3 +1,4 @@
+import { violetDark } from "@radix-ui/colors";
 import { createStitches } from "@stitches/react";
 
 export const { styled } = createStitches({
@@ -11,5 +12,10 @@ export const { styled } = createStitches({
       marginLeft: value,
       marginRight: value,
     }),
+  },
+  theme: {
+    colors: {
+      ...violetDark,
+    }
   },
 });

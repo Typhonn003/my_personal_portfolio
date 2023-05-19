@@ -1,5 +1,6 @@
-import { createTheme, globalCss, styled } from "@stitches/react";
+import { createStitches, createTheme, globalCss } from "@stitches/react";
 import { ReactNode } from "react";
+import { styled } from "./stitches.config";
 
 interface GlobalStyleProps {
   children: ReactNode;
@@ -28,41 +29,40 @@ export const Box = styled("div", {
 export const colors = {
   color: {
     brand1: {
-      color: "$brand1",
+      color: "$violet1",
     },
     brand2: {
-      color: "$brand2",
+      color: "$violet2",
     },
     brand3: {
-      color: "$brand3",
+      color: "$violet3",
+    },
+    brand4: {
+      color: "$violet4",
     },
     brand5: {
-      color: "$brand5",
+      color: "$violet5",
+    },
+    brand6: {
+      color: "$violet6",
     },
     brand7: {
-      color: "$brand5",
+      color: "$violet7",
     },
-    grey1: {
-      color: "$grey1",
+    brand8: {
+      color: "$violet8",
     },
-
-    grey2: {
-      color: "$grey2",
+    brand9: {
+      color: "$violet9",
     },
-
-    grey3: {
-      color: "$grey3",
+    brand10: {
+      color: "$violet10",
     },
-
-    grey4: {
-      color: "$grey4",
+    brand11: {
+      color: "$violet11",
     },
-
-    grey5: {
-      color: "$grey5",
-    },
-    grey6: {
-      color: "$grey6",
+    brand12: {
+      color: "$violet12",
     },
   },
 };
@@ -84,16 +84,6 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
 
   const theme = createTheme({
     colors: {
-      brand1: "#623CEA",
-      brand2: "#311E75",
-
-      grey0: "#0A0A0B",
-      grey1: "#121214",
-      grey2: "#868E96",
-      grey3: "#E9ECEF",
-      grey4: "#F8F9FA",
-      grey5: "#F8F9FA",
-
       socialInstagram: "#CF50AC",
       socialFacebook: "#506CCF",
       socialLinkedin: "#0E76A8",

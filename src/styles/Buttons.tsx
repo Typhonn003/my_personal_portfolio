@@ -27,12 +27,12 @@ export const Button = styled("button", {
         fontWeight: "500",
       },
       primary: {
-        background: "$brand1",
-        borderColor: "$brand1",
+        background: "$violet8",
+        borderColor: "$violet8",
         color: "$whiteFixed",
         "&:hover": {
-          backgroundColor: "$brand2",
-          borderColor: "$brand2",
+          backgroundColor: "transparent",
+          borderColor: "$violet8",
         },
         "@mobile": {
           height: "2.5rem",
@@ -41,13 +41,13 @@ export const Button = styled("button", {
         },
       },
       outline: {
-        borderColor: "$grey4",
-        color: "$grey4",
+        borderColor: "$violet10",
+        color: "$violet10",
         backgroundColor: "transparent",
 
         "&:hover": {
-          backgroundColor: "$grey4",
-          color: "$grey1",
+          backgroundColor: "$violet10",
+          color: "$violet6",
         },
       },
       toggleTheme: {
@@ -56,15 +56,15 @@ export const Button = styled("button", {
         maxWidth: "3rem",
         padding: "",
         borderRadius: "2rem",
-        borderColor: "$grey4",
-        color: "$grey4",
+        borderColor: "$violet10",
+        color: "$violet10",
         backgroundColor: "transparent",
         position: "relative",
         "&::before": {
           content: "",
           width: "1.5rem",
           height: "1.5rem",
-          backgroundColor: "$grey4",
+          backgroundColor: "$violet10",
           position: "absolute",
           left: "0.25rem",
           borderRadius: "50%",
@@ -91,18 +91,18 @@ export const Button = styled("button", {
       },
 
       icon: {
-        borderColor: "$grey1",
-        backgroundColor: "$grey1",
+        borderColor: "$violet10",
+        backgroundColor: "$violet10",
         paddingInline: "1rem",
         "& svg": {
-          fill: "$grey2",
+          fill: "$violet12",
         },
         "&:hover": {
-          backgroundColor: "$grey1",
+          backgroundColor: "$violet12",
         },
       },
       circle: {
-        borderColor: "$grey5",
+        borderColor: "$violet10",
         backgroundColor: "transparent",
         borderRadius: "50%",
         padding: "0",
@@ -116,7 +116,7 @@ export const Button = styled("button", {
         ["&.instagram"]: {
           backgroundColor: "$socialInstagram",
           borderColor: "$socialInstagram",
-          color: "$whiteFixed",
+          color: "$violet10",
           "&:hover": {
             backgroundColor: "transparent",
             borderColor: "$socialInstagram",

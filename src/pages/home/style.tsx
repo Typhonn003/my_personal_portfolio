@@ -9,13 +9,13 @@ import backgroundImg from "@/public/static/img/background/header-bg.svg";
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
-  backgroundColor: "$grey1",
+  backgroundColor: "$violet2",
   padding: "12rem 0 8rem 0",
   backgroundImage: `url(${backgroundImg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
-  borderBottom: "2px solid $grey5",
+  borderBottom: "2px solid $violet10",
   "@tablet": {
     backgroundPosition: "right -10% center",
   },
@@ -74,7 +74,7 @@ export const UserImage = styled("img", {
 });
 
 export const StackSection = styled("div", {
-  backgroundColor: "$grey4",
+  backgroundColor: "#1bff07", //ver depois pois nao mudou de cor rs
   padding: "4rem 0 2rem 0",
 });
 
@@ -103,7 +103,7 @@ export const StackCards = styled("div", {
 
 export const ProjectsArea = styled("section", {
   padding: "$section 0",
-  backgroundColor: "$grey0",
+  backgroundColor: "$violet2",
   backgroundImage: `url(${dots})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "left top 11rem",
