@@ -1,7 +1,7 @@
 import { styled } from "@/styles/stitches.config";
 
 export const ContactSection = styled("section", {
-  background: "$grey1",
+  background: "$violet2",
   padding: "$section 0",
   "@mobile": {
     padding: "$sectionMobile 0",
@@ -45,7 +45,7 @@ export const ContactCard = styled("div", {
   marginBottom: "6rem",
   ["& a"]:{
     "&:hover":{
-        color: "$grey4",
+        color: "$violet11",
         cursor: "pointer"
     }
   },
@@ -59,7 +59,6 @@ export const ContactCardImage = styled("div", {
   height: "4.5rem",
   marginRight: "$2",
   borderRadius: "$1",
-  backgroundColor: "$grey0",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

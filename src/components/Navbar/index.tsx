@@ -24,7 +24,7 @@ export const NavBar = (): JSX.Element => {
 
   const isWide = useMedia({ maxWidth: "991px" });
 
-  document.title = userData.nameUser;
+  document.title = "Portfolio - Diego Lima";
 
   const [open, setOpen] = useState(false);
 
@@ -60,17 +60,14 @@ export const NavBar = (): JSX.Element => {
 export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
-      <Button type="btLink" as="a" color="grey4" href={`#home`}>
-        Home
+      <Button type="btLink" as="a" color="brand12" href={`#home`}>
+        Inicio
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#projects`}>
-        Projects
+      <Button type="btLink" as="a" color="brand12" href={`#projects`}>
+        Projetos
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#contact`}>
-        Contact
-      </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#social-media`}>
-        Social Media
+      <Button type="btLink" as="a" color="brand12" href={`#contact`}>
+        Contato
       </Button>
     </NavbarLinks>
   );

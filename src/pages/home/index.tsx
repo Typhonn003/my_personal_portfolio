@@ -1,20 +1,16 @@
-// Styles
 import { Container, Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 import { Button } from "@/styles/Buttons";
 
-// Components
 import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
 
-// Data
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 import { FaGithub } from "react-icons/fa";
 
-// Page Style
 import {
   Header,
   HeaderContent,
@@ -28,8 +24,6 @@ import {
 } from "./style";
 
 export const Home = (): JSX.Element => {
-  const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
 
   return (
     <main id="home">
@@ -44,37 +38,23 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="brand12">Olá, me chamo {userData.nameUser}</Text>
             </Flex>
-            <Text as="h1" type="heading1" color="grey5">
-            I{" "}
-              <Text as="span" type="heading1" color="brand1">
-                love
-              </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
-              </Text>{" "}
-              projects
-            </Text>
-            <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+            <Text as="h1" type="heading1" color="brand12">Sou um desenvolvedor <Text as="span" type="heading1" color="brand10">Full Stack</Text> em desenvolvimento</Text>
+            <Text type="body1" color="brand12">
+              Minha jornada começou por volta de 2007, quando descobri que um dos meus jogos de navegador preferidos tinha diversos blogs feitos por outros jogadores. Essa descoberta acendeu em mim uma chama de curiosidade e, sem perceber, comecei a aprender a construir blogs simples em HTML e CSS inline. Com o passar dos anos, aprimorei meus conhecimentos e aprendi a utilizar essas tecnologias de forma correta, criando páginas responsivas e complexas.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
-              </Button>
-              <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Veja meus projetos
               </Button>
               <Button
-                color="grey5"
+                color="brand12"
                 as="a"
-                css={{ "&:hover": { color: "$grey1" } }}
+                css={{ "&:hover": { color: "brand6" } }}
                 type="circle"
                 target="_blank"
-                href={gihubUrl}
+                href={"https://github.com/typhonn003"}
               >
                 <FaGithub />
               </Button>
@@ -91,14 +71,11 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
-                My projects
+              <Text as="h2" type="heading1" color="brand10">
+                Projetos
               </Text>
-              <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
-                <Text as="span" color="brand5">
-                  side projects
-                </Text>
+              <Text as="p" type="body1" color="brand12">
+                Alguns dos meus projetos
               </Text>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>

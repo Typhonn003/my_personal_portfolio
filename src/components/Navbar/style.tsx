@@ -3,8 +3,8 @@ import { Flex, Container } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 
 export const Navbar = styled("nav", {
-  background: "$grey0",
-  borderBottom: "2px solid $brand1",
+  background: "$violet1",
+  borderBottom: "2px solid $violet10",
   position: "fixed",
   inset: 0,
   bottom: "auto",
@@ -29,7 +29,7 @@ export const LogoTipo = styled(Flex, {
 export const LogoTipoText = styled("span", {
   fontSize: "1.25rem",
   fontWeight: 600,
-  color: "$grey4",
+  color: "$violet10",
   fontFamily: '"IBM Plex Sans"',
   "@mobile": {
     fontSize: "1rem",

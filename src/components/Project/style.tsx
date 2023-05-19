@@ -11,8 +11,8 @@ export const ProjectStack = styled(Flex, {
 });
 
 export const ProjectStackTech = styled("span", {
-  backgroundColor: "$grey1",
-  color: "$grey2",
+  backgroundColor: "$violet8",
+  color: "$violet12",
   padding: "0  0.5rem",
   borderRadius: "$2",
 });
@@ -23,7 +23,7 @@ export const ProjectLinks = styled(Flex, {
 
 export const ProjectLink = styled("a", {
   fontSize: "1rem",
-  color: "$grey2",
+  color: "$violet12",
   fontWeight: "500",
   marginRight: "$2",
   display: "flex",
@@ -31,7 +31,7 @@ export const ProjectLink = styled("a", {
   lineHeight: "0",
 
   "&:hover": {
-    color: "$grey5",
+    color: "$violet11",
   },
 
   [`& svg`]: {
@@ -59,11 +59,11 @@ export const Project = styled("article", {
         right: "-4rem",
         width: "max-content",
         height: "28px",
-        backgroundColor: "$brand1",
+        backgroundColor: "$violet10",
         padding: "0px 8px",
         borderRadius: "var(--radii-1)",
         fontSize: "14px",
-        color: "var(--colors-whiteFixed)",
+        color: "$violet12",
         fontWeight: "400",
         display: "flex",
         alignItems: "center",
